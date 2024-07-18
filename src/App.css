@@ -1,13 +1,12 @@
 body {
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   background-image: url('https://assets-global.website-files.com/604a97c70aee09eed25ce991/61897a35583a9b51db018d3e_MartinPublicSeating-97560-Importance-School-Library-blogbanner1.jpg');
-
 }
+
 .login {
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
- 
 }
 
 .form {
@@ -30,7 +29,6 @@ body {
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
- 
 }
 
 .form input:focus {
@@ -47,7 +45,6 @@ body {
   cursor: pointer;
 }
 
-
 .form span {
   font-size: 40px;
   color: #4b6cb7;
@@ -55,7 +52,51 @@ body {
   display: block;
   align-items: center;
 }
-.error
-{
+
+.error {
   color: red;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+  .login {
+    width: 90%;
+    padding: 10% 0 0;
+  }
+  .form {
+    max-width: 90%;
+    padding: 30px;
+  }
+  .form input {
+    font-size: 12px;
+  }
+  .form button {
+    font-size: 12px;
+  }
+  .form span {
+    font-size: 30px;
+  }
+}
+
+/* For screens smaller than 480px (mobiles) */
+@media only screen and (max-width: 480px) {
+  .login {
+    width: 80%;
+    padding: 15% 0 0;
+  }
+  .form {
+    max-width: 80%;
+    padding: 20px;
+  }
+  .form input {
+    font-size: 10px;
+  }
+  .form button {
+    font-size: 10px;
+  }
+  .form span {
+    font-size: 20px;
+  }
 }
